@@ -1,0 +1,25 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Build Test Dockerfile
+        run: docker build -t test_action:latest -f test/Dockerfile.test .
+
+      - name: Super-linter
+        uses: super-linter/super-linter/slim@v5
+        env:
+          VALIDATE_ALL_CODEBASE: true
+          VALIDATE_DOCKERFILE_HADOLINT: false
+          VALIDATE_JSCPD: false
+          DEFAULT_BRANCH: main
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

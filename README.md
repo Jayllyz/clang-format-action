@@ -3,7 +3,7 @@
 ![GitHub release](https://img.shields.io/github/v/release/jayllyz/clang-format-action?sort=semver&logo=github)
 [![GitHub Repo stars](https://img.shields.io/github/stars/jayllyz/clang-format-action?logo=github&style=flat)](https://github.com/jayllyz/clang-format-action)
 ![GitHub last commit](https://img.shields.io/github/last-commit/jayllyz/clang-format-action?logo=github)
-![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square&logo=github)
+![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square&logo=github&style=flat)
 
 This action runs clang-format on the latest commit.
 Many clang-format alternatives exist, I know, but i wanted to learn how to write a github action.
@@ -11,6 +11,8 @@ Many clang-format alternatives exist, I know, but i wanted to learn how to write
 Also, i'll keep this updated with the latest alpine version and will try to add as many options as possible.
 
 ## Usage
+
+Example workflow:
 
 ```yml
 ---
@@ -54,8 +56,8 @@ You can read more about the options here : [clang style docs](https://clang.llvm
 
 | Option     | Description                                                                                     | Default |
 | ---------- | ----------------------------------------------------------------------------------------------- | ------- |
-| `check`    | Check if the files are formatted, if true, will only check if the files are formatted correctly.                                                      | `false` |
-| `style`    | Style to use for formatting.  can be file, llvm, chromium, google, mozilla, webkit or microsoft. | `file`  |
+| `check`    | If true, will only check if the files are formatted correctly. If false, will format the files. | `false` |
+| `style`    | Style to use for formatting.  can be: `file`,`LLVM`,`GNU`,`Google`,`Chromium`,`Microsoft`,`Mozilla` or `Webkit`. | `file`  |
 | `extensions` | Comma-separated list of file extensions to check. Do not include the dot. | `cpp,h,hpp,c` |
 
 ## Action Badge

@@ -1,0 +1,9 @@
+FROM alpine:3.19
+
+RUN apk add --no-cache git clang-extra-tools python3
+
+COPY test.sh /test.sh
+
+RUN chmod +x /test.sh
+
+ENTRYPOINT ["./test.sh"]

@@ -2,10 +2,6 @@
 
 clang-format --version
 
-echo "Running clang-format on the following files:"
-
-git diff --name-only HEAD HEAD^
-
 # if check only
 
 if [ "$1" = "true" ]; then
