@@ -1,3 +1,4 @@
+---
 name: 'Clang formatter action'
 description: 'run clang-format on your latest commit'
 author: 'jayllyz'
@@ -22,4 +23,4 @@ runs:
     - ${{ inputs.check }}
     - ${{ inputs.style }}
     - ${{ inputs.extensions }}
-
+...

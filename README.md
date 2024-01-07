@@ -4,6 +4,7 @@
 [![GitHub Repo stars](https://img.shields.io/github/stars/jayllyz/clang-format-action?logo=github&style=flat)](https://github.com/jayllyz/clang-format-action)
 ![GitHub last commit](https://img.shields.io/github/last-commit/jayllyz/clang-format-action?logo=github)
 ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square&logo=github&style=flat)
+[![CI](https://github.com/Jayllyz/clang-format-action/actions/workflows/ci.yml/badge.svg)](https://github.com/Jayllyz/clang-format-action/actions/workflows/ci.yml)
 
 This action runs clang-format on the latest commit.
 Many clang-format alternatives exist, I know, but i wanted to learn how to write a GitHub action.
