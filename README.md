@@ -6,7 +6,7 @@
 ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square&logo=github&style=flat)
 
 This action runs clang-format on the latest commit.
-Many clang-format alternatives exist, I know, but i wanted to learn how to write a github action.
+Many clang-format alternatives exist, I know, but i wanted to learn how to write a GitHub action.
 
 Also, i'll keep this updated with the latest alpine version and will try to add as many options as possible.
 

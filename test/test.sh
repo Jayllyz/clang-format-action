@@ -18,7 +18,7 @@ git add .
 git commit -m "Initial commit"
 
 # Add code that violates the style
-printf "#include <stdio.h>\void main(){for(int i=0;i<10;i++){printf(\"Hello, world!\");}}" >test.c
+printf "#include <stdio.h>\nvoid main(){for(int i=0;i<10;i++){printf(\"Hello, world!\");}}" >test.c
 
 # Commit the changes
 git add .
