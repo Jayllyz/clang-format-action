@@ -41,6 +41,7 @@ jobs:
           check: false
           style: file
           extensions: cpp,h,hpp,c
+          clang-version: latest
 
       # commit the changes (if there are any)
       - name: Commit changes
@@ -60,6 +61,7 @@ You can read more about the options here : [clang style docs](https://clang.llvm
 | `check`    | If true, will only check if the files are formatted correctly. If false, will format the files. | `false` |
 | `style`    | Style to use for formatting.  can be: `file`,`LLVM`,`GNU`,`Google`,`Chromium`,`Microsoft`,`Mozilla` or `Webkit`. | `file`  |
 | `extensions` | Comma-separated list of file extensions to check. Do not include the dot. | `cpp,h,hpp,c` |
+| `clang-version` | Specify the major version of clang to use. | `latest` |
 
 ## Action Badge
 

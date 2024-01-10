@@ -2,6 +2,14 @@
 
 # This script is used to test the GitHub Action locally and in CI workflow.
 
+# CLANG_VERSION is ENV variable in CI workflow
+
+if [ "${CLANG_VERSION}" != "latest" ]; then
+    apk add --no-cache "clang${CLANG_VERSION}-extra-tools"
+else
+    apk add --no-cache clang-extra-tools
+fi
+
 mkdir temp_repository
 cd temp_repository || exit
 

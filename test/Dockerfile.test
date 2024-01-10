@@ -1,6 +1,8 @@
 FROM alpine:3.19
 
-RUN apk add --no-cache git clang-extra-tools python3
+ENV CLANG_VERSION="latest"
+
+RUN apk add --no-cache git python3
 
 COPY test.sh /test.sh
 

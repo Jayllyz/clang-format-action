@@ -1,5 +1,11 @@
 #!/bin/sh -l
 
+if [ "$4" != "latest" ]; then
+    apk add --no-cache "clang$4-extra-tools"
+else
+    apk add --no-cache clang-extra-tools
+fi
+
 clang-format --version
 
 # if check only
