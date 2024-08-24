@@ -38,6 +38,11 @@ clang-format --version
 
 # Run clang-format on the file
 git clang-format --extensions=c -v HEAD^
+if [ $? -eq 0 ]; then
+    echo "All files are formatted correctly."
+else
+    echo "Files are not formatted correctly."
+fi
 
 git commit -am "clang-format ✅"
 

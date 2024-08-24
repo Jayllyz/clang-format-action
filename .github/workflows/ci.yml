@@ -25,12 +25,6 @@ jobs:
       - name: Run Test Dockerfile
         run: docker run --rm -e CLANG_VERSION=${{ matrix.clang_version }} test_action:latest
 
-      - name: Super-linter
-        uses: super-linter/super-linter/slim@v7
-        env:
-          VALIDATE_ALL_CODEBASE: true
-          VALIDATE_DOCKERFILE_HADOLINT: false
-          VALIDATE_JSCPD: false
-          DEFAULT_BRANCH: main
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Run ShellCheck
+        uses: azohra/shell-linter@v0.6.0
 ...
