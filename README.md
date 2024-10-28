@@ -56,12 +56,13 @@ jobs:
 
 You can read more about the options here : [clang style docs](https://clang.llvm.org/docs/ClangFormatStyleOptions.html).
 
-| Option     | Description                                                                                     | Default |
-| ---------- | ----------------------------------------------------------------------------------------------- | ------- |
-| `check`    | If true, will only check if the files are formatted correctly. If false, will format the files. | `false` |
-| `style`    | Style to use for formatting.  can be: `file`,`LLVM`,`GNU`,`Google`,`Chromium`,`Microsoft`,`Mozilla` or `Webkit`. | `file`  |
-| `extensions` | Comma-separated list of file extensions to check. Do not include the dot. | `cpp,h,hpp,c` |
-| `clang-version` | Specify the major version of clang to use. | `latest` |
+| Option          | Description                                                                                                      | Default       |
+|-----------------|------------------------------------------------------------------------------------------------------------------|---------------|
+| `check`         | If true, will only check if the files are formatted correctly. If false, will format the files.                  | `false`       |
+| `style`         | Style to use for formatting.  can be: `file`,`LLVM`,`GNU`,`Google`,`Chromium`,`Microsoft`,`Mozilla` or `Webkit`. | `file`        |
+| `extensions`    | Comma-separated list of file extensions to check. Do not include the dot.                                        | `cpp,h,hpp,c` |
+| `clang-version` | Specify the major version of clang to use.                                                                       | `latest`      |
+| `base-ref`      | Base ref to run git-clang-format against.                                                                        | `HEAD^`       |
 
 ## Action Badge
 

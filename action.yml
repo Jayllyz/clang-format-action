@@ -19,6 +19,9 @@ inputs:
   clang-version:
     description: 'The major version of clang to use. Defaults to latest'
     default: 'latest'
+  base-ref:
+    description: 'The base ref to be compared to for a git-clang-format run.'
+    default: 'HEAD^'
 runs:
   using: 'docker'
   image: 'Dockerfile'
@@ -27,4 +30,5 @@ runs:
     - ${{ inputs.style }}
     - ${{ inputs.extensions }}
     - ${{ inputs.clang-version }}
+    - ${{ inputs.base-ref }}
 ...
